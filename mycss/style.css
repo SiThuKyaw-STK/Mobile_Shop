@@ -65,6 +65,7 @@ html {
   }
   ul {
     list-style-type: none;
+    padding: 10px 15px;
   }
   a {
     text-decoration: none;
@@ -125,7 +126,7 @@ html {
   }
   /*  global classes */
   
-  .btn {
+  .btnstk {
     text-transform: uppercase;
     background: transparent;
     color: var(--clr-black);
@@ -134,31 +135,37 @@ html {
     display: inline-block;
     transition: var(--transition);
     font-size: 0.875rem;
-    border: 2px solid var(--clr-black);
+    border: 1px solid var(--clr-black);
     cursor: pointer;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     border-radius: var(--radius);
   }
-  .btn:hover {
+  .btnstk:hover {
     color: var(--clr-white);
     background: var(--clr-black);
   }
-  .btn-white {
+  .btnstk-white {
     color: var(--clr-white);
     border-color: var(--clr-white);
     border-radius: 0;
     padding: 0.5rem 1rem;
   }
-  .btn:hover {
-    background: var(--clr-white);
+  .btnstk-red {
     color: var(--clr-secondary);
+    border-color: var(--clr-white);
+    border-radius: 0;
+    padding: 0.5rem 1rem;
+  }
+  .btnstk:hover {
+    background: var(--clr-secondary);
+    color: var(--clr-white);
   }
 
   /* navbar */
 nav {
   background: var(--clr-white);
-  padding: 1rem 1.5rem;
   width: 100%;
+  z-index: 1000;
 }
 .stk-nav{
   box-shadow: var(--dark-shadow);
@@ -208,6 +215,7 @@ nav {
 }
 ul li{
   border-right: 1px solid black;
+  text-align: center;
 }
 ul i{
   border-right: 1px solid black;
@@ -300,5 +308,58 @@ ul i{
   }
   .header-social i{
       margin-right: 10px;
+  }
+  /* hero */
+  .home-img button{
+    position: relative;
+    bottom: 200px;
+    left: 400px;
+  }
+  .owl-nav{
+    position: absolute;
+    top: 300px;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+  }
+  .owl-prev{
+    width: 50px;
+    height: 100px;
+    background: #8080807a !important;
+  }
+  .owl-next{
+    width: 50px;
+    height: 100px;
+    background: #8080807a !important;
+  }
+  .owl-dots{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 40px;
+  }
+  /* services */
+  .services{
+
+  }
+  .service-card{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #fafafafa;
+    height: 425px;
+    padding: 0px 15px;
+    box-shadow: var(--dark-shadow);
+    border-radius: var(--radius);
+  }
+  .service-card .imp-icon{
+    width: 130px;
+    height: 122px;
+    background: #EBF0FE;
+    line-height: 122px;
+    border-radius: 10px;
   }
 
