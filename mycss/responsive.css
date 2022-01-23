@@ -19,7 +19,7 @@
     bottom: 250px;
     left: 50px;
   }
-  .owl-nav{
+  .owl-nav {
     top: 180px;
   }
 }
@@ -40,6 +40,25 @@
   }
   .owl-nav {
     top: 90px;
+  }
+  .service-card .imp-icon {
+    width: 150px;
+    height: 150px;
+    background: #ebf0fe;
+    line-height: 150px;
+    border-radius: 10px;
+    font-size: 60px;
+  }
+  .customers-feedback-card-header {
+  }
+  .customers-feedback-card-header h4 {
+    font-size: 40px;
+  }
+  .customers-feedback-card-header i {
+    font-size: 40px;
+  }
+  .customers-feedback-card p{
+    font-size: 25px;
   }
 }
 /* laptop */

@@ -362,4 +362,28 @@ ul i{
     line-height: 122px;
     border-radius: 10px;
   }
+/* branch shop */
+.branch{
+  background-image: url(/myImage/background_2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.branch-card a:hover{
+  text-decoration: none;
+}
+/* feedback */
+.feedback{
+  background-image: url(/myImage/background_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.customers-feedback-card{
+box-shadow: var(--light-shadow);
+}
+.customers-feedback-card img{
+  width: 150px;
+  height: 300px;
+}
 
