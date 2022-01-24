@@ -386,4 +386,13 @@ box-shadow: var(--light-shadow);
   width: 150px;
   height: 300px;
 }
+/* footer */
+.footer{
+  background-color: #46C3DB;
+}
+.footer-icons-container{
 
+}
+.footer-icons-container img{
+  width: 35px;
+}
