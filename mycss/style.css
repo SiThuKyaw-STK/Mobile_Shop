@@ -194,7 +194,7 @@ nav {
   justify-content: space-between;
 }
 .nav-toggle {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: var(--clr-grey-1);
   background: transparent;
   border-color: transparent;
@@ -204,14 +204,45 @@ nav {
 .nav-toggle:hover {
   color: var(--clr-secondary);
 }
+.dropup .dropdown-toggle::after {
+ display: none !important;
+}
+.stk-dropdown{
+  position: absolute !important;
+  left: -133px !important;
+  transition: var(--transition);
+  transform: translate3d(0px, 26px, 0px);
+}
+
+.top-link {
+  font-size: 1.25rem;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  background: var(--clr-secondary);
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius);
+  color: var(--clr-white);
+  animation: bounce 2s ease-in-out infinite;
+  visibility: hidden;
+  z-index: -100;
+}
 
 .links-container {
   height: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   transition: var(--transition);
 }
+
 .show-links {
   height: 300px;
+}
+.show-link {
+  visibility: visible;
+  z-index: 100;
 }
 ul li{
   border-right: 1px solid black;
@@ -256,9 +287,9 @@ ul i{
     background: transparent;
   }
   .nav-center {
-    width: 90vw;
+    /* width: 90vw;
     max-width: 1170px;
-    margin: 0 auto;
+    margin: 0 auto; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -294,7 +325,7 @@ ul i{
 
   /* header */
   header{
-      background-color: var(--clr-primary-5);
+      
   }
   .logo{
       width: 130px;

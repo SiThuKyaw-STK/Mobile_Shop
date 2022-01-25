@@ -27,71 +27,71 @@
   </head>
   <body>
     <header id="home" class="container-fluid">
-      <div class="row d-flex justify-content-between">
-        <div class="logo d-none d-md-inline">
-          <img src="/MyLogo/SVG/SVG/MyLogo_White.svg" alt="" />
-        </div>
-        <div class="header-text d-md-flex d-none align-items-center">
-          <h3>IT,Mobile & Electronic Center</h3>
-        </div>
-        <div class="header-social d-md-flex d-none align-items-center">
-          <i class="fab fa-2x fa-facebook-f"></i>
-          <i class="fab fa-2x fa-twitter"></i>
-          <i class="fab fa-2x fa-instagram"></i>
-        </div>
-        <div class="mobile-nav d-md-none w-100">
-          <!-- nav header -->
-          <div class="nav-header d-flex justify-content-between">
-            <h1 class="font-weight-bold text-white m-0 py-2 ml-2">ZeroOne</h1>
-            <button class="nav-toggle">
-              <i class="fas fa-bars"></i>
-            </button>
+      <div class="row">
+        <!-- navbar -->
+        <nav id="nav">
+          <div class="nav-center">
+            <!-- nav header -->
+            <div class="nav-header">
+              <img src="/myLogo/SVG/logo-dark.svg" class="logo" alt="logo" />
+              <button class="nav-toggle">
+                <i id="nav-icon" class="fas fa-bars"></i>
+              </button>
+            </div>
+            <!-- search -->
+            <div class="search-container">
+              <h4
+                class="text-center font-weight-bolder"
+                style="color: var(--clr-primary-5)"
+              >
+                IT,Mobile & Electronic Center
+              </h4>
+            </div>
+            <!-- links -->
+            <div class="links-container">
+              <ul class="links m-0">
+                <a href="#home" class="m-0 d-flex align-items-center"
+                  ><i class="fas fa-home pr-2"></i
+                ></a>
+                <li>
+                  <a href="#services" class="scroll-link">SERVICES</a>
+                </li>
+                <li>
+                  <a href="#branch" class="scroll-link">BRANCH</a>
+                </li>
+                <li>
+                  <a href="#feedback" class="scroll-link">FEEDBACK</a>
+                </li>
+                <li>
+                  <a href="#contact" class="scroll-link">CONTACT US</a>
+                </li>
+                <li class="">
+                  <div class="dropup">
+                    <a class=" dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                      PRODOUTS
+                    </a>
+                    <div  class="dropdown-menu stk-dropdown" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item text-center px-md-2 py-md-4 px-2 py-3" href="phone.html">PHONES</a>
+                      <a class="dropdown-item text-center px-md-2 py-md-4 px-2 py-3" href="pc.html">PC/LAPTOP</a>
+                      <a class="dropdown-item text-center px-md-2 py-md-4 px-2 py-3" href="accessories.html">ACCESSORIES</a>
+                      <a class="dropdown-item text-center px-md-2 py-md-4 px-2 py-3" href="electronic.html">ELECTRONIC</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              
+            </div>
+
           </div>
-        </div>
+        </nav>
       </div>
     </header>
 
-    <!-- NavBar -->
-    <div
-      class="row d-flex justify-content-center stk-nav w-100 m-0"
-      style="background-color: white"
-    >
-      <nav id="nav">
-        <div class="nav-center">
-          <!-- links -->
-          <div class="links-container">
-            <ul class="links m-0">
-              <a href="#home" class="m-0 d-flex align-items-center"
-                ><i class="fas fa-home pr-2"></i
-              ></a>
-              <li>
-                <a href="#home" class="scroll-link">PHONES</a>
-              </li>
-              <li>
-                <a href="#about" class="scroll-link">PC/LAPTOP</a>
-              </li>
-              <li>
-                <a href="#services" class="scroll-link">TABLETS</a>
-              </li>
-              <li>
-                <a href="#tours" class="scroll-link">ACCESSORIES</a>
-              </li>
-              <li>
-                <a href="#tours" class="scroll-link">ELECTRONIC</a>
-              </li>
-            </ul>
-          </div>
-          <!-- search -->
-          <div class="search-container">
-            <input type="text" placeholder="Search your products...." />
-          </div>
-        </div>
-      </nav>
-    </div>
+
 
     <!-- hero -->
 
-    <section class="container-fluid p-0">
+    <section id="home" class="container-fluid p-0">
       <div class="row owl-carousel owl-theme m-0 d-none d-md-inline-block">
         <div class="home-img">
           <img src="myImage/samsung-fold3-home-banner2.png" alt="" />
@@ -416,7 +416,7 @@
     </section>
 
     <!-- Footer -->
-    <footer id="footer" class="footer container-fluid">
+    <footer id="contact" class="footer container-fluid">
       <div class="row">
         <div class="container">
           <div class="row d-flex align-items-center min-vh-100">
@@ -526,6 +526,11 @@
         </div>
       </div>
     </div>
+
+    <a class="scroll-link top-link" href="#home">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="vendor/OwlCarousel/dist/owl.carousel.js"></script>

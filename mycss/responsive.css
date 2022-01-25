@@ -25,6 +25,16 @@
   .copyRight h5{
     font-size: 15px;
   }
+  .links-container {
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+}
+.stk-dropdown {
+  position: absolute !important;
+  left: 100px !important;
+}
+
 }
 
 /* tablet */
@@ -70,3 +80,35 @@
     top: 200px;
   }
 }
+
+/* <nav id="nav">
+        <div class="nav-center">
+          <!-- links -->
+          <div class="links-container">
+            <ul class="links m-0">
+              <a href="#home" class="m-0 d-flex align-items-center"
+                ><i class="fas fa-home pr-2"></i
+              ></a>
+              <li>
+                <a href="#services" class="scroll-link">SERVICES</a>
+              </li>
+              <li>
+                <a href="#branch" class="scroll-link">BRANCH</a>
+              </li>
+              <li>
+                <a href="#feedback" class="scroll-link">FEEDBACK</a>
+              </li>
+              <li>
+                <a href="#contact" class="scroll-link">CONTACT US</a>
+              </li>
+              <li>
+                <a href="#tours" class="scroll-link">PRODUCTS</a>
+              </li>
+            </ul>
+          </div>
+          <!-- search -->
+          <div class="search-container">
+            <input type="text" placeholder="Search your products...." />
+          </div>
+        </div>
+      </nav> */
