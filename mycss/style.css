@@ -325,7 +325,7 @@ ul i{
 
   /* header */
   header{
-      
+      /* box-shadow: var(--dark-shadow); */
   }
   .logo{
       width: 130px;
